@@ -300,26 +300,26 @@ client.on('message', message => {
      
   if (message.content.startsWith(adminprefix + 'setg')) {
     client.user.setGame(argresult);
-      message.channel.send(`LastCodes   ${argresult}**`)
+      message.channel.send(`تم ${argresult}**`)
   } else
      if (message.content === (adminprefix + "leave")) {
     message.guild.leave();        
   } else  
   if (message.content.startsWith(adminprefix + 'setw')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`LastCodes   ${argresult}**`)
+      message.channel.send(`تم${argresult}**`)
   } else
   if (message.content.startsWith(adminprefix + 'setl')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.send(`LastCodes   ${argresult}**`)
+      message.channel.send(`تم   ${argresult}**`)
   } else
   if (message.content.startsWith(adminprefix + 'sets')) {
     client.user.setGame(argresult, "https://www.twitch.tv/One");
-      message.channel.send(`LastCodes`)
+      message.channel.send(`تم`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
   client.user.setUsername(argresult).then
-      message.channel.send(`Changing The Name To ..**${argresult}** `)
+      message.channel.send(`Changing The Name To :**${argresult}** `)
 } else
 if (message.content.startsWith(adminprefix + 'setavatar')) {
   client.user.setAvatar(argresult);
@@ -327,7 +327,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {
 }
 });
 
-var prefix = "#"
+
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -367,7 +367,7 @@ client.on('message', message => {
 }
 });
 
-var prefix = "#"
+
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
  
